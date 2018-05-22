@@ -1,0 +1,31 @@
+- name: OpenStack
+
+  collector: gnocchi
+  period: 3600
+  wait_periods: 0
+
+  services:
+    - compute
+    - image
+
+  services_objects:
+    compute: instance
+    image: image
+
+  services_metrics:
+    compute:
+      - cpu: max
+    image:
+      - image.size: max
+
+  metrics_units:
+    compute:
+      1:
+        unit: instance
+    image:
+      image.size:
+        unit: MiB
+        factor: 1/1048576
+    default_unit:
+      1:
+        unit: unknown

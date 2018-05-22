@@ -1,0 +1,9 @@
+export OS_PROJECT_DOMAIN_ID=default
+export OS_USER_DOMAIN_ID=default
+export OS_PROJECT_NAME=summit
+export OS_TENANT_NAME=summit
+export OS_USERNAME=summit_user
+export OS_PASSWORD=password
+export OS_AUTH_URL=http://127.0.0.15:5000/v3
+export OS_IDENTITY_API_VERSION=3
+export OS_AUTH_TYPE=password
